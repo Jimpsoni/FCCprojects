@@ -35,8 +35,8 @@ class Rectangle():
   def get_amount_inside(self, obj):
     w_1, h_1 = obj.w, obj.h
 
-    width = int(self.w /w_1)
-    height = int(self.h  /h_1)
+    width = self.w // w_1
+    height = self.h  // h_1
 
     if width >= 1 and height >= 1:
       return width * height
